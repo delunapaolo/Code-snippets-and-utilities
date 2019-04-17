@@ -1,4 +1,23 @@
 def ask(question, answers, default_answer, type_validator=str):
+    """Ask question to user via console.
+
+    :param question: [str] The question to ask.
+    :param answers: [list of str, str] The possible answers to choose from. If
+        '' (empty string), then no answer will be suggested.
+    :param default_answer: [str or numeric] The default answer for when the user
+        replies by pressing Enter. If '' (empty string), nothing will happen
+        when user hits Enter.
+    :param type_validator: Validate answer. Useful for when the user shall input
+        an int, for instance, and replies with a float. Examples are str, float,
+        int (no quotes, this is the class itself).
+
+    :return user_answer: What the user has typed, validated according to
+        type_validator.
+
+    Note that this function does not raise Exceptions when user input cannot be
+    validated or answer is not included among default ones. It keeps trying until
+    user inputs a valid answer.
+    """
     # Get number of answers
     if not isinstance(answers, list):
         answers = [answers]
