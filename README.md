@@ -5,7 +5,9 @@ Functions, marked by _**F(x)**_, do not usually have any internal dependency. Th
 # python
 ## console
 **[ask](python/console/ask.py)** _**F(x)**_ Function to request user input from console, suggesting possible answers, and with answer data-type validation.
+
 **[numpy](python/console/numpy.py)** Commands to improve printing of numpy arrays.
+
 **[pandas](python/console/pandas.py)** Commands to improve printing of pandas DataFrames.
 
 
