@@ -7,9 +7,13 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 ## console
 **[ask](python/console/ask.py)** _**F(x)**_ Function to request user input from console, suggesting possible answers, and with answer data-type validation.
 
-**[numpy](python/console/numpy.py)** Commands to improve printing of numpy arrays.
+**[numpy_printing](python/console/numpy_printing_.py)** Commands to improve printing of numpy arrays.
 
-**[pandas](python/console/pandas.py)** Commands to improve printing of pandas DataFrames.
+**[pandas_printing](python/console/pandas_printing.py)** Commands to improve printing of pandas DataFrames.
+
+## Anaconda
+**[reinstall_package](python/anaconda/reinstall_package.txt)** Reinstall a package.
+
 
 
 ## I/O operations
@@ -23,6 +27,10 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 # MATLAB
 
 # R
+## console
+**[clear_console](R/console/clear_console.txt)** Command to clear all messages from console. Useful at startup.
+
+**[clear_environment](R/console/clear_environment.txt)** Command to remove all variables from environment. Useful at startup.
 
 # SQL
 

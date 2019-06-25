@@ -1,0 +1,2 @@
+# Remove all variables from environment
+rm(list = ls())
