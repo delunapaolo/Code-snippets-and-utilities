@@ -7,7 +7,7 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 ## console
 **[ask](python/console/ask.py)** _**F(x)**_ Function to request user input from console, suggesting possible answers, and with answer data-type validation.
 
-**[numpy_printing](python/console/numpy_printing_.py)** Commands to improve printing of numpy arrays.
+**[numpy_printing](python/console/numpy_printing.py)** Commands to improve printing of numpy arrays.
 
 **[pandas_printing](python/console/pandas_printing.py)** Commands to improve printing of pandas DataFrames.
 
