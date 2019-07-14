@@ -1,0 +1,11 @@
+BFG source: https://github.com/rtyley/bfg-repo-cleaner
+
+1) cd <folder parent of .git directory>
+
+2) java -jar <path to bfg>/bfg-1.13.0.jar --delete-files <file to delete> 
+
+3) <copy new file>
+
+4) git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+5) <force push>
