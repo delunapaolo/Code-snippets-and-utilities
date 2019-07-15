@@ -20,6 +20,9 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 ## I/O operations
 **[matlab_file](python/IO_operations/matlab_file.py)** _**F(x)**_ Function to load MATLAB file containing structures.
 
+**[convert_avi_to_mp4](python/IO_operations/convert_avi_to_mp4.py)** _**F(x)**_ Function to convert AVI videos (e.g., screen captures) to MP4.
+
+
 ## pyQt 5
 **[Qt_window](python/pyQt/Qt_window.py)** _**F(x)**_ Subclasses QMainWindow to react to window resizing. Also, the window cannot be closed by (accidentally) clicking the close button, because of a boolean flag that has to be turned on to allow this to happen.
 
