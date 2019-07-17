@@ -39,6 +39,12 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 
 **[clear_environment](R/console/clear_environment.txt)** Command to remove all variables from environment. Useful at startup.
 
+**[ggplot2 cheatsheet](reference_cards/ggplot2.pdf)** Reference card of commands for data visualization with ggplot2.
+
+**[dplyr cheatsheet](reference_cards/dplyr.pdf)** Reference card of commands for data transformation with dplyr.
+
+
+
 ---
 # SQL
 
@@ -49,4 +55,7 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 # git
 **[BFG_repo_cleaner](git/BFG_Repo_Cleaner.txt)** Shell commands remove a file history from a repo.
 
+---
+# TeX & Co.
 
+**[TeX cheatsheet](reference_cards/TeX.pdf)** Reference card of commands for typesetting in TeX.
