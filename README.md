@@ -5,6 +5,7 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 ---
 
 # python
+
 ## console
 **[ask](python/console/ask.py)** _**F(x)**_ Function to request user input from console, suggesting possible answers, and with answer data-type validation.
 
@@ -30,6 +31,10 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 ---
 
 # MATLAB
+
+## Strings and Cells
+**[uniqueCellRows](MATLAB/strings_and_cells/uniqueCellRows.m)** _**F(x)**_ Fast function to get unique rows in cell array of mixed data types.
+
 
 ---
 
