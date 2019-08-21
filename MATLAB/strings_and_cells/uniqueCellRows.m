@@ -1,7 +1,14 @@
 function varargout = uniqueCellRows(cell_array_in, varargin)
 %uniqueCellRows Function to get the unique rows in a cell array. It can handle
 %columns with mixed data types.
+%
+% The input argument 'return_indices' is used internally to call this function
+% recursively. 
+% 
+% The output is always in 'stable' format, which means that the output will always
+% list unique rows in the same order as they appeared.
 
+% Parse inputs
 p = inputParser;
 addOptional(p, 'return_indices', false);
 parse(p, varargin{:})
@@ -12,7 +19,7 @@ return_indices = p.Results.return_indices;
 if ~exist('cell_array_in', 'var')
     fprintf('This is a demonstration of the function <strong>uniqueCellRows</strong>\n\n')
     
-    % Reference: https://uk.mathworks.com/matlabcentral/answers/52708-how-to-find-unique-rows-in-cell-array-in-matlab
+    % Make cell array with mixed data types
     cell_array_in = {'1', '1'; '1', '1'; '1', 1; '1', 1; '2', NaN; '2', NaN};
 
     fprintf('Given this cell array with mixed data types in the second column:\n\n')
