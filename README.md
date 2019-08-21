@@ -58,7 +58,7 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 
 ---
 # git
-**[BFG_repo_cleaner](git/BFG_Repo_Cleaner.txt)** Shell commands remove a file history from a repo.
+**[BFG_repo_cleaner](git/BFG_repo_cleaner.txt)** Shell commands remove a file history from a repo.
 
 ---
 # TeX & Co.
