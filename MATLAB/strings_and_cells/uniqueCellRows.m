@@ -1,34 +1,27 @@
-function varargout = uniqueCellRows(cell_array_in, varargin)
+function cell_array_out = uniqueCellRows(cell_array_in)
 %uniqueCellRows Function to get the unique rows in a cell array. It can handle
 %columns with mixed data types.
-%
-% The input argument 'return_indices' is used internally to call this function
-% recursively. 
 % 
-% The output is always in 'stable' format, which means that the output will always
-% list unique rows in the same order as they appeared.
-
-% Parse inputs
-p = inputParser;
-addOptional(p, 'return_indices', false);
-parse(p, varargin{:})
-return_indices = p.Results.return_indices;
-
+% The output is always in 'stable' format, which means that the output will
+% always list unique rows in the same order as they appeared.
+% 
+% Run uniqueCellRows without inputs for a demo.
 
 %% DEMO
 if ~exist('cell_array_in', 'var')
-    fprintf('This is a demonstration of the function <strong>uniqueCellRows</strong>\n\n')
-    
-    % Make cell array with mixed data types
+    % Make and show input
     cell_array_in = {'1', '1'; '1', '1'; '1', 1; '1', 1; '2', NaN; '2', NaN};
-
-    fprintf('Given this cell array with mixed data types in the second column:\n\n')
+    fprintf('This is a demonstration of the function <strong>uniqueCellRows</strong>\n\n')
+    fprintf('Given this cell array with mixed data types in the second column:\n')
     disp(cell_array_in)
     
-    res = uniqueCellRows(cell_array_in);
-    fprintf('\n\nThe following are the unique rows of it:\n');
-    disp(res)
+    % Compute and show result
+    cell_array_out = uniqueCellRows(cell_array_in);
+    fprintf('\nThe following are the unique rows of it:\n');
+    disp(cell_array_out)
     
+    % Quit demo
+    cell_array_out = '-- end of demo ---';
     return
 end
 
@@ -70,10 +63,11 @@ for i_var = 1:n_variables
                     values_in = cellfun(@char, values_in, 'UniformOutput',false);
                     % Concatenate with data type and then select unique
                     % combinations of value and type
-                    [~, indices] = uniqueCellRows([values_in, data_types], 'return_indices',true);
+                    [~, ~, values_in_indices] = unique(values_in, 'stable');
+                    [~, ~, data_types_indices] = unique(data_types, 'stable');
                     % The unique pairs of indices correspond the unique values
                     % in the mixed array
-                    [~, ~, indices] = unique(indices, 'stable', 'rows');
+                    [~, ~, indices] = unique([values_in_indices, data_types_indices], 'stable', 'rows');
                     % Take position of each unique value
                     [~, first_index, ~] = unique(indices, 'stable');                    
                     unique_values = cell_array_in(first_index, i_var);
@@ -108,11 +102,5 @@ for i_var = 1:n_variables
         case 'numeric'
             cell_array_out(:, i_var) = num2cell(variable_map{i_var}(unique_array_out(:, i_var)));
     end
-end
-
-% Return outputs
-varargout{1} = cell_array_out;
-if return_indices
-    varargout{2} = cell_array_in_converted;
 end
 
