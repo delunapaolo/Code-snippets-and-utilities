@@ -58,7 +58,7 @@ for i_var = 1:n_variables
                     data_types = cellfun(@class, values_in, 'UniformOutput',false);
                     % Convert everything to a string and then to character array
                     values_in = cellfun(@string, values_in, 'UniformOutput',false);
-                    % Replace missing values with 
+                    % Replace missing values with "NaN"
                     values_in(cellfun(@(x) ismissing(x), values_in)) = {"NaN"};
                     values_in = cellfun(@char, values_in, 'UniformOutput',false);
                     % Concatenate with data type and then select unique
