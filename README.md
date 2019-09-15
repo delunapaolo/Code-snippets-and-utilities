@@ -44,9 +44,12 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 
 **[clear_environment](R/console/clear_environment.txt)** Command to remove all variables from environment. Useful at startup.
 
+## Reference cards
+**[dplyr cheatsheet](reference_cards/dplyr.pdf)** Reference card of commands for data transformation with dplyr.
+
 **[ggplot2 cheatsheet](reference_cards/ggplot2.pdf)** Reference card of commands for data visualization with ggplot2.
 
-**[dplyr cheatsheet](reference_cards/dplyr.pdf)** Reference card of commands for data transformation with dplyr.
+**[R for data science cheatsheet](reference_cards/R_for_data_science.pdf)** Tidyverse reference created by [DataCamp](DataCamp.com).
 
 
 
