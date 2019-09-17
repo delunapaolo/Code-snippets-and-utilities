@@ -32,6 +32,9 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 
 # MATLAB
 
+## Arrays
+**[seq2range](MATLAB/arrays/seq2range.m)** _**F(x)**_ Function to obtain beginning and end of sequences of indices.
+
 ## Strings and Cells
 **[uniqueCellRows](MATLAB/strings_and_cells/uniqueCellRows.m)** _**F(x)**_ Fast function to get unique rows in cell array of mixed data types.
 
@@ -44,12 +47,14 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 
 **[clear_environment](R/console/clear_environment.txt)** Command to remove all variables from environment. Useful at startup.
 
-## Reference cards
+## Reference cards / Cheatsheets
 **[dplyr cheatsheet](reference_cards/dplyr.pdf)** Reference card of commands for data transformation with dplyr.
 
 **[ggplot2 cheatsheet](reference_cards/ggplot2.pdf)** Reference card of commands for data visualization with ggplot2.
 
 **[R for data science cheatsheet](reference_cards/R_for_data_science.pdf)** Tidyverse reference created by [DataCamp](DataCamp.com).
+
+**[Rmarkdown cheatsheet](reference_cards/Rmarkdown.pdf)** Rmarkdown cheatsheet.
 
 
 
