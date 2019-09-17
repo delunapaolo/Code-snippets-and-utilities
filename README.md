@@ -33,7 +33,7 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 # MATLAB
 
 ## Arrays
-**[seq2range](MATLAB/arrays/seq2range.m)** _**F(x)**_ Function to obtain beginning and end of sequences of indices.
+**[idx2range](MATLAB/arrays/idx2range.m)** _**F(x)**_ Function to convert indices, which usually come from a find() call, into a tabular format, where beginning and end of each segment is stored together with its length.
 
 ## Strings and Cells
 **[uniqueCellRows](MATLAB/strings_and_cells/uniqueCellRows.m)** _**F(x)**_ Fast function to get unique rows in cell array of mixed data types.
