@@ -56,6 +56,9 @@ Functions, marked by _**F(x)**_, do not usually have any dependency on other fil
 
 **[Rmarkdown cheatsheet](reference_cards/Rmarkdown.pdf)** Rmarkdown cheatsheet.
 
+**[lubridate cheatsheet](reference_cards/lubridate.pdf)** Dates and times with lubridate.
+
+
 
 
 ---
